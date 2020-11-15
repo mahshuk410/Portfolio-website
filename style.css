@@ -1,12 +1,28 @@
-body{
+/*body{
     background-image: url("home-white-background.jpg") ;
     background-repeat: no-repeat;
     
-}
+}*/
 
 body header div{
     background-image:"" ;
 
+}
+
+.header-image{
+    
+    
+    height :auto;
+
+}
+
+/*Background image for HEADER*/
+.nav-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
 }
 .navigation-option{
     font-family: 'Big Shoulders Stencil Text', cursive;
@@ -15,15 +31,9 @@ body header div{
     border: 25px darkblue;
     color:white;
     padding: 10px 15px;
-    margin : 5px;
+    margin : 15px;
     
     
 }
-.navigation-box{
-    background-image: url("nav-background-image.jpg");
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-   
-}
+
 
