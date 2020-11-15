@@ -1,0 +1,29 @@
+body{
+    background-image: url("home-white-background.jpg") ;
+    background-repeat: no-repeat;
+    
+}
+
+body header div{
+    background-image:"" ;
+
+}
+.navigation-option{
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 35px;
+    background-color: #067a7a;
+    border: 25px darkblue;
+    color:white;
+    padding: 10px 15px;
+    margin : 5px;
+    
+    
+}
+.navigation-box{
+    background-image: url("nav-background-image.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+
