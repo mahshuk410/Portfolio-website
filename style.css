@@ -4,31 +4,42 @@
     
 }*/
 
-body header div{
-    background-image:"" ;
-
+body {
+    background-image:url("Portfolio-website\blue-homeBackground.jpg") ;
+    background-position: center;
+    background-size: cover;
 }
 
-.header-image{
-    
-    
-    height :auto;
-
+p.introduction-container{
+    border-radius: 2cm;
+    border: 3px rgb(244, 164, 96)
 }
+
 
 /*Background image for HEADER*/
 .nav-container{
     
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-   
+    align-items: center;  
 }
+
+.nav-container ul{
+    margin-left: 20px;
+    z-index:2;
+}
+.nav-container ul li{
+    margin: 0 10px;
+    display:inline-block;
+}
+
 .navigation-option{
+    text-decoration: none;
     font-family: 'Big Shoulders Stencil Text', cursive;
     font-size: 35px;
     background-color: #067a7a;
     border: 25px darkblue;
+    text-align: center;
     color:white;
     padding: 10px 15px;
     margin : 15px;
