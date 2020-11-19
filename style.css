@@ -1,50 +1,219 @@
 /*body{
     background-image: url("home-white-background.jpg") ;
     background-repeat: no-repeat;
-    
+    #about-me
 }*/
-
+ 
 body {
-    background-image:url("Portfolio-website\blue-homeBackground.jpg") ;
+    background-image:url("background.jpg") ;
     background-position: center;
     background-size: cover;
+    font-family: 'Libre Baskerville', serif;
 }
-
-p.introduction-container{
-    border-radius: 2cm;
-    border: 3px rgb(244, 164, 96)
+body section p {
+    font-size: 15pt;
 }
 
 
 /*Background image for HEADER*/
-.nav-container{
-    
+ div.nav-container{
+    background-color: rgb(12, 117, 117);
     display: flex;
     flex-wrap: wrap;
-    align-items: center;  
+    justify-content:space-evenly; 
 }
-
-.nav-container ul{
-    margin-left: 20px;
+ .nav-container ul{
     z-index:2;
 }
-.nav-container ul li{
+ .nav-container ul li{
     margin: 0 10px;
     display:inline-block;
+}
+.nav-container ul li a{
+    text-decoration: none;
+    color:#fff;
 }
 
 .navigation-option{
     text-decoration: none;
     font-family: 'Big Shoulders Stencil Text', cursive;
     font-size: 35px;
-    background-color: #067a7a;
-    border: 25px darkblue;
+    background-color: #051111;
     text-align: center;
-    color:white;
+    color:#fff;
     padding: 10px 15px;
     margin : 15px;
+}
+.current-page{
+    text-decoration: none;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 35px;
+    background-color:#ffffff !important;
+    text-align: center;
     
-    
+    padding: 10px 15px;
+    margin : 15px;
+}
+.current-page a{
+    text-decoration: none;
+    color:#051111;
+}
+/* Pseudo classes for Navigation bar */
+.navigation-option :hover{
+    background-color: rgb(121, 194, 121);
+    color:#000000
+}
+.navigation-option :active{
+    background-color: rgb(141, 219, 233);
+    color:#000000
+}
+
+/* Page 1 : Home --> About Me */
+/* ================================================================================================ */
+body#about-me section h1{
+    position: relative;
+    left:20px;
+    font-size: 40px;
+
+}
+body#about-me section h2{
+    position: relative;
+    left:35px;
+    font-size: 35px;
+    font-style: oblique;
+    font-weight: lighter;
+
 }
 
 
+.introduction-container{
+    position: relative;
+    left: 8%;
+    background-color: rgba(252, 147, 147, 0.6);
+    width:75%;
+    height:500px;
+    border-radius: 1.7cm;
+    border: 10px rgb(88, 72, 57);
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+
+ 
+}
+.introduction-container p{
+  padding:20px 20px;
+  padding-right: 50px;
+  line-height: 9mm;
+}
+/*SCHOOLS*/
+/*==========*/
+.primary-school{
+    margin-left: 0.9cm;
+}
+/*postioning the school logos in their divs*/
+.primary-school img{
+    width:100%;
+    height:auto;
+    position: relative;
+    top:70px;
+    left:60px;
+}
+.secondary-school img{
+    height:auto;
+    position: relative;
+    top:60px;
+    right:60px;
+    
+}
+.post-secondary img{
+    height:auto;
+    position: relative;
+    top:60px;
+    left:60px;
+    
+}
+.primary-school,.secondary-school,.post-secondary{
+    border:3px solid rgb(125, 179, 233);
+    width:50%;
+    height:370px;
+    margin-bottom: 0.5cm;
+    border-radius: 0.8cm;
+    padding:0px 100px 0px ;
+
+}
+/*separate line-spacing and padding for .secondary-school text */
+
+.primary-school p{
+    line-height: 1cm;
+    width:100%;
+    text-align: justify;
+}
+.secondary-school p{
+    margin: 0px 0px 0px -20px;
+    width:120%;
+    line-height: 8mm;
+    padding-bottom: 0px !important;
+    text-align: justify;
+
+}
+.post-secondary p{
+    margin-left: -50px;
+    line-height: 8.5mm;
+    width:120%;
+}
+.primary-school,.post-secondary{
+    display:flex;
+    flex-direction: row;
+}
+.secondary-school{
+    display:flex;
+    flex-direction: row-reverse;
+}
+/*CCA*/
+/*==========*/
+.cca{
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cca img{
+    width:25%;
+    height:auto;
+    margin-left: 30px;
+}
+.cca p{
+    margin:0px 50px;
+    width:70%;
+    line-height: 10mm;
+    text-align: justify;
+}
+
+/* WORK */
+/*==========*/
+/* for the 'Job title' heading h2 */
+.work-exp h2{
+    margin-bottom: 40px;
+}
+/* for the 'period' heading h3*/
+.work-exp h3{
+    margin-left: 50px;
+}
+.work-exp p{
+    margin:0px 50px;
+    width:60%;
+    line-height: 10mm;
+    text-align: justify;
+    font-size: 16pt !important;
+}
+
+
+/* Page 2:Skills */
+/* ============================================================================================ */
+
+
+body#skills {
+    background-image:url("background.jpg") ;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Libre Baskerville', serif;
+}
