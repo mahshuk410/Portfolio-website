@@ -4,7 +4,7 @@
     #about-me
 }*/
  
-body {
+body#about-me {
     background-image:url("background.jpg") ;
     background-position: center;
     background-size: cover;
@@ -199,21 +199,42 @@ body#about-me section h2{
     margin-left: 50px;
 }
 .work-exp p{
-    margin:0px 50px;
+    margin:0px 50px 40px;
     width:60%;
     line-height: 10mm;
     text-align: justify;
     font-size: 16pt !important;
 }
-
+#top-button{
+    color:rgba(62, 62, 231, 0.925);
+    margin:10px 50px;
+    font-size: x-large;
+    background-color:rgba(255, 255, 255,0.1);
+}
+.footer-container{
+    margin-top: 30px;
+    background-color: rgba(47, 79, 79, 0.945);
+    width:100%;
+    height:8cm;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.footer-container h3{
+    color: #fff;
+    font-size: 15pt;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+}
 
 /* Page 2:Skills */
 /* ============================================================================================ */
 
 
-body#skills {
+ body #skills {
     background-image:url("background.jpg") ;
     background-position: center;
     background-size: cover;
     font-family: 'Libre Baskerville', serif;
 }
+
