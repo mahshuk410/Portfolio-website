@@ -3,14 +3,15 @@
     background-repeat: no-repeat;
     #about-me
 }*/
+
  
-body#about-me {
+#about-me,#skills,#achievements,#projects {
     background-image:url("background.jpg") ;
     background-position: center;
     background-size: cover;
     font-family: 'Libre Baskerville', serif;
 }
-body section p {
+#about-me section p,#skills section p,#achievements section p,#projects section p {
     font-size: 15pt;
 }
 
@@ -70,7 +71,7 @@ body section p {
 
 /* Page 1 : Home --> About Me */
 /* ================================================================================================ */
-body#about-me section h1{
+#about-me section h1,#skills section h1,#achievements section h1,#projects section h1{
     position: relative;
     left:20px;
     font-size: 40px;
@@ -175,6 +176,7 @@ body#about-me section h2{
     display:flex ;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .cca img{
     width:25%;
@@ -198,7 +200,7 @@ body#about-me section h2{
 .work-exp h3{
     margin-left: 50px;
 }
-.work-exp p{
+.work-exp p, #achievements section p{
     margin:0px 50px 40px;
     width:60%;
     line-height: 10mm;
@@ -230,11 +232,12 @@ body#about-me section h2{
 /* Page 2:Skills */
 /* ============================================================================================ */
 
+table {
+    border-collapse: collapse;
+  }
+/* Page 3:Achievements */
+/* ============================================================================================ */
 
- body #skills {
-    background-image:url("background.jpg") ;
-    background-position: center;
-    background-size: cover;
-    font-family: 'Libre Baskerville', serif;
+#achievements section div h2{
+    margin-left:40px;
 }
-
