@@ -22,7 +22,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly; 
-}
+    
+ }
+ .nav-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+ }  
+ /* Make navigation bar stick to the browser */
  .nav-container ul{
     z-index:2;
 }
@@ -32,6 +39,7 @@
 }
 .nav-container ul li a{
     text-decoration: none;
+    transition: all 0.3s ease;
     color:#fff;
 }
 
@@ -64,10 +72,7 @@
     background-color: rgb(121, 194, 121);
     color:#000000
 }
-.navigation-option :active{
-    background-color: rgb(141, 219, 233);
-    color:#000000
-}
+
 
 /* Page 1 : Home --> About Me */
 /* ================================================================================================ */
@@ -89,12 +94,9 @@ body#about-me section h2{
 
 .introduction-container{
     position: relative;
-    left: 8%;
     background-color: rgba(252, 147, 147, 0.6);
-    width:75%;
+    width:100%;
     height:500px;
-    border-radius: 1.7cm;
-    border: 10px rgb(88, 72, 57);
     display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
@@ -232,12 +234,63 @@ body#about-me section h2{
 /* Page 2:Skills */
 /* ============================================================================================ */
 
-table {
+.table-container{
+    display: flex;
+    flex-direction: row;
+}
+.skill-table-1,.skill-table-2{
+    
     border-collapse: collapse;
-  }
+    margin:10px;
+}
+.skill-table-2 table{
+    padding-left: 100px;
+    width: 100%;
+}
+tr,td{
+  height: 150px;
+}
+th,tr,td {
+    color:#fff;
+    border: 1px solid rgb(255, 255, 255);
+}
+th,td{
+    background-color:#2d90a9;
+}
 /* Page 3:Achievements */
 /* ============================================================================================ */
 
 #achievements section div h2{
     margin-left:40px;
+}
+/* Page 4:Projects */
+/* ============================================================================================ */
+.projects-container{
+    border-radius: 20px;
+    background-color: rgba(240, 230, 140,0.6);
+    margin:0 40px;
+}
+.projects-container img{
+    max-width:100%;
+    width :400px;
+    height:auto;
+}
+.projects-container ol li{
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-style: normal;
+}
+.projects-container p {
+    width:800px;
+    padding:30px;
+    line-height: 8mm;
+}
+projects-container > div{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.projects-container ol div {
+    flex-direction: row;
 }
