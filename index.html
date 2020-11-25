@@ -12,8 +12,10 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     </head>
-    <body id ="about-me">
+    <body id ="about-me">  <!-- Id for "Back to Top" button and styling purposes -->
         <section>
+           
+            
         <header>
             <!--<div class="header-image"><img src ="https://picsum.photos/seed/picsum/200/300"></div>-->
             <div class = "nav-container">
@@ -21,7 +23,7 @@
                     <!--Add "life of a (Indian + Computer Science) student" as nav header-->
                     <ul>
                        
-                        <li class ="navigation-option"><a href = "index.html">About Me</a></li>
+                        <li class ="navigation-option-active"><a href = "index.html">About Me</a></li>
                         <li class ="navigation-option"><a href = "others-html/skills.html">Skills</a></li>
                         <li class ="navigation-option"><a href = "others-html/achievements.html">Achievements</a></li>
                         <li class ="navigation-option"><a href = "others-html/projects.html">Projects</a></li>
@@ -32,7 +34,7 @@
                 </nav>
             </div>
         </header>
-        
+        <div id = "page-1">
             <h1>Introduction</h1>  
             <div class = "introduction-container">
                 
@@ -99,7 +101,8 @@
                     More importantly,I had to serve customers politely and attend to their queries.
                 </p>
             </div>
-        <button onclick="topFunction()" id="top-button" title="Click this to go Top">Back to Top ^</button> 
+            <!-- "Back to Top Anchor Jump button" -->
+         <a href ="#about-me" id="top-button" title="Click this to go Top">Back to Top ^</a>
         <footer>
             <!-- Create common website footer including contact info,links -->
                 <div class = "footer-container">
@@ -113,6 +116,7 @@
                     <h3>Documents</h3>
                 </div>
                 </div>
+            </div>
         </footer>
     </section>
 

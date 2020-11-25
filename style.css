@@ -53,29 +53,31 @@
     padding: 10px 15px;
     margin : 15px;
 }
-.current-page{
-    text-decoration: none;
-    font-family: 'Big Shoulders Stencil Text', cursive;
-    font-size: 35px;
-    background-color:#ffffff !important;
-    text-align: center;
-    
-    padding: 10px 15px;
-    margin : 15px;
-}
-.current-page a{
-    text-decoration: none;
-    color:#051111;
-}
 /* Pseudo classes for Navigation bar */
 .navigation-option :hover{
     background-color: rgb(121, 194, 121);
     color:#000000
+    
+}
+.navigation-option-active{
+    text-decoration: none;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 35px;
+    background-color: #b82d1b;
+    text-align: center;
+    color:#051111;
+    padding: 10px 15px;
+    margin : 15px;
+    
 }
 
 
 /* Page 1 : Home --> About Me */
 /* ================================================================================================ */
+#page-1{
+    display:flex;
+    flex-direction: column ;
+ } /*This is the parent div container for organising flexbox of the page "About me" */
 #about-me section h1,#skills section h1,#achievements section h1,#projects section h1{
     position: relative;
     left:20px;
@@ -110,9 +112,6 @@ body#about-me section h2{
 }
 /*SCHOOLS*/
 /*==========*/
-.primary-school{
-    margin-left: 0.9cm;
-}
 /*postioning the school logos in their divs*/
 .primary-school img{
     width:100%;
@@ -135,15 +134,16 @@ body#about-me section h2{
     left:60px;
     
 }
-.primary-school,.secondary-school,.post-secondary{
-    border:3px solid rgb(125, 179, 233);
-    width:50%;
-    height:370px;
-    margin-bottom: 0.5cm;
-    border-radius: 0.8cm;
+/* Styling the boxes for each school description */
+div.primary-school,div.secondary-school,div.post-secondary{
+   background-color: green;
+    width:70%;
+    height:450px;
+    margin-bottom: 1.0cm;
     padding:0px 100px 0px ;
 
 }
+
 /*separate line-spacing and padding for .secondary-school text */
 
 .primary-school p{
@@ -152,8 +152,7 @@ body#about-me section h2{
     text-align: justify;
 }
 .secondary-school p{
-    margin: 0px 0px 0px -20px;
-    width:120%;
+    width:100%;
     line-height: 8mm;
     padding-bottom: 0px !important;
     text-align: justify;
@@ -176,8 +175,7 @@ body#about-me section h2{
 /*==========*/
 .cca{
     display:flex ;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding-bottom: 20px;
 }
 .cca img{
@@ -186,7 +184,7 @@ body#about-me section h2{
     margin-left: 30px;
 }
 .cca p{
-    margin:0px 50px;
+    margin:0px 40px;
     width:70%;
     line-height: 10mm;
     text-align: justify;
@@ -210,10 +208,20 @@ body#about-me section h2{
     font-size: 16pt !important;
 }
 #top-button{
-    color:rgba(62, 62, 231, 0.925);
-    margin:10px 50px;
+    position: relative;
+    left:20px;
+    color :#fff;
+    /* color:rgba(62, 62, 231, 0.925); */
+    text-decoration: none;
+    padding:10px 20px;
+    border:2px solid #fff;
+    background-color: #2e2ef7;
     font-size: x-large;
-    background-color:rgba(255, 255, 255,0.1);
+    cursor:pointer;
+}
+#top-button:hover{
+    background-color: #fff;
+    color: #2e2ef7;
 }
 .footer-container{
     margin-top: 30px;
@@ -233,7 +241,10 @@ body#about-me section h2{
 
 /* Page 2:Skills */
 /* ============================================================================================ */
-
+#page-2{
+    display:flex;
+    flex-direction: column ;
+ } /*This is the parent div container for organising flexbox of the page "Skills" */
 .table-container{
     display: flex;
     flex-direction: row;
@@ -259,12 +270,20 @@ th,td{
 }
 /* Page 3:Achievements */
 /* ============================================================================================ */
-
+#page-3{
+    display:flex;
+    flex-direction: column ;
+ } /*This is the parent div container for organising flexbox of the page "Achievements" */
 #achievements section div h2{
     margin-left:40px;
 }
 /* Page 4:Projects */
 /* ============================================================================================ */
+#page-4{
+    display:flex;
+    flex-direction: column ;
+ } /*This is the parent div container for organising flexbox of the page "Achievements" */
+
 .projects-container{
     border-radius: 20px;
     background-color: rgba(240, 230, 140,0.6);
@@ -293,4 +312,44 @@ projects-container > div{
 
 .projects-container ol div {
     flex-direction: row;
+}
+section i{
+    position: relative;
+    left:20%;
+    width:10px;
+    padding: 10px;
+}
+ section i img{
+    
+    border: 1px ;
+    
+    width:2.5%;
+    height:auto;
+}
+#contact-me{
+    background-color: rgb(57, 59, 59);
+    color:#2d90a9;
+}
+
+#contact-me form label{
+    padding:5px 10px;
+    font-size: 18pt;
+}
+
+form input,form textarea {
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+.submit-button{
+    position:absolute;
+    bottom:10px;
+    right:100px;
+    background-color: rgb(15, 160, 15);
+    padding:18px 20px;
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+}
+a i img :hover{
+    color:#e0e4e7 ;
 }
