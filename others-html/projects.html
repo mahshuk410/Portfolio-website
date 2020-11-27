@@ -9,8 +9,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+        <link href = "https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel = "stylesheet"><!-- Normalize.css -->
+
         <!-- Social media Button links(for FOOTER) -->
-        <link href ="../all.min.css" rel = "stylesheet">
     </head>
     <body id ="projects">  <!-- Id for "Back to Top" button and styling purposes -->
         <section>
@@ -24,7 +25,7 @@
                     <li class ="navigation-option"><a href = "skills.html">Skills</a></li>
                     <li class ="navigation-option"><a href = "achievements.html">Achievements</a></li>
                     <li class ="navigation-option-active"><a href = "projects.html">Projects</a></li>
-                    <li class ="navigation-option"><a href = "#contact-links">Contact Me</a></li>
+                    <li class ="navigation-option"><a href = "#contact-links">Contact</a></li>
                 </ul>
                 
             </nav>
@@ -63,9 +64,11 @@
         </ol>
     </div>
     <a href ="#projects" id="top-button" title="Click this to go Top">Back to Top ^</a>
+    
 
+<a name = "contact-links"></a> <!-- Anchor tag for Page jump link  -->
 <div id = "contact-me" style="position: relative;">
-<h1>Drop me an email!</h1>
+<h1>Connect with me </h1>
 <form action = "mailto:mahshuk410@gmail.com" method = "POST" enctype="multipart/form-data">
     <div>
     <label>Your Name: </label>
@@ -73,23 +76,27 @@
     </div>
     <div>
     <label>Message: </label>
-    <textarea style ="padding:10px;position: relative;left:43px;"rows = "7" cols = "15"></textarea><br>
-    <input class ="submit-button" type ="submit" value = "Send Email"></div>
+    <textarea style ="padding:10px;position: relative;left:43px;"rows = "7" cols = "15" placeholder="Feel free to drop me an email!"></textarea><br>
+    <input class ="submit-button"  type ="submit" value = "Send Email"></div>
 
 </form>
-<!-- Anchor tag for Page jump link  -->
-<a name = "contact-links"></a>
-</div>
-<!-- Facebook Icon -->
-<a href = "https://www.facebook.com/mahshukurrahman.sulthan.5" target="_blank" title = "My Facebook Profile">
-<i><img  src = "/Portfolio-website/icon-library/facebook-circular-logo.png"></i></a>
-<!-- Instagram Icon -->
-<a href = "https://www.instagram.com/mahshuk410/" target="_blank" title = "My Instagram Profile">
-<i><img  src = "/Portfolio-website/icon-library/instagram.png"></i></a>
-<!-- LinkedIn Icon -->
-<a href = "https://www.linkedin.com/in/mahshukurrahman-4050ab1a9/" target="_blank" title = "My LinkedIn profile">
-<i><img src = "/Portfolio-website/icon-library/linkedin.png"></i></a>
 
+<!-- Facebook Icon -->
+<section >
+<div id = "icons">
+
+<div><a href = "https://www.facebook.com/mahshukurrahman.sulthan.5" target="_blank" title = "My Facebook Profile"> 
+    <i><img src = "/Portfolio-website/icon-library/facebook-circular-logo.svg"></i></a></div>
+    <!-- Instagram Icon -->
+    <div><a href = "https://www.instagram.com/mahshuk410/" target="_blank" title = "My Instagram Profile">
+    <i><img class = "instagram" src = "/Portfolio-website/icon-library/instagram.svg"></i></a></div>
+    <!-- LinkedIn Icon -->
+    <div><a href = "https://www.linkedin.com/in/mahshukurrahman-4050ab1a9/" target="_blank" title = "My LinkedIn profile">
+    <i><img src = "/Portfolio-website/icon-library/linkedin.svg"></i></a></div>
+</div>
+
+</div>
+    
 </section>
     </body>
 </html>

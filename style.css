@@ -6,7 +6,7 @@
 
  
 #about-me,#skills,#achievements,#projects {
-    background-image:url("image-library/background.jpg") ;
+    background-image:url("/Portfolio-website/image-library/background.jpg") ;
     background-position: center;
     background-size: cover;
     font-family: 'Libre Baskerville', serif;
@@ -15,20 +15,19 @@
     font-size: 15pt;
 }
 
-
-/*Background image for HEADER*/
- div.nav-container{
+/* NAVIGATION BAR SETTINGS
+====================================================*/
+div.nav-container{
     background-color: rgb(12, 117, 117);
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly; 
     
  }
- .nav-container{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
- }  
+  /* .nav-container{
+     position: fixed;
+    
+ }    */
  /* Make navigation bar stick to the browser */
  .nav-container ul{
     z-index:2;
@@ -80,8 +79,12 @@
  } /*This is the parent div container for organising flexbox of the page "About me" */
 #about-me section h1,#skills section h1,#achievements section h1,#projects section h1{
     position: relative;
+    padding:30px 10px;
+    font-family:'Big Shoulders Stencil Text', cursive;
+    letter-spacing: 10px;
     left:20px;
     font-size: 40px;
+    text-transform: uppercase;
 
 }
 body#about-me section h2{
@@ -98,7 +101,7 @@ body#about-me section h2{
     position: relative;
     background-color: rgba(252, 147, 147, 0.6);
     width:100%;
-    height:500px;
+    height:700px;
     display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
@@ -106,9 +109,15 @@ body#about-me section h2{
  
 }
 .introduction-container p{
-  padding:20px 20px;
-  padding-right: 50px;
+  padding:10px 0px;
+  padding-left: 50px;
   line-height: 9mm;
+}
+.selfie-pic{
+    padding:15px 20px 15px 90px;
+    max-width:50%; 
+    height:auto;
+    
 }
 /*SCHOOLS*/
 /*==========*/
@@ -131,16 +140,21 @@ body#about-me section h2{
     height:auto;
     position: relative;
     top:60px;
-    left:60px;
+    left:140px;
+    
+}
+.schools-container{
+    width:100%;
+    background-color: rgba(123, 255, 0, 0.5);
     
 }
 /* Styling the boxes for each school description */
 div.primary-school,div.secondary-school,div.post-secondary{
-   background-color: green;
+  
     width:70%;
-    height:450px;
+    height:300px;
     margin-bottom: 1.0cm;
-    padding:0px 100px 0px ;
+    padding:0px 100px  ;
 
 }
 
@@ -152,15 +166,16 @@ div.primary-school,div.secondary-school,div.post-secondary{
     text-align: justify;
 }
 .secondary-school p{
+    position: relative;
+    bottom:40px;
     width:100%;
-    line-height: 8mm;
-    padding-bottom: 0px !important;
+    line-height: 1cm;
     text-align: justify;
 
 }
 .post-secondary p{
     margin-left: -50px;
-    line-height: 8.5mm;
+    line-height: 1cm;
     width:120%;
 }
 .primary-school,.post-secondary{
@@ -170,21 +185,25 @@ div.primary-school,div.secondary-school,div.post-secondary{
 .secondary-school{
     display:flex;
     flex-direction: row-reverse;
+    
 }
 /*CCA*/
 /*==========*/
 .cca{
     display:flex ;
-    flex-direction: column;
-    padding-bottom: 20px;
+    flex-direction: row;
+    align-content: center;
+    padding:20px 0px 90px;
+    background-color: darkorange;
 }
 .cca img{
-    width:25%;
+    padding-top:80px;
+    width:100%;
     height:auto;
     margin-left: 30px;
 }
 .cca p{
-    margin:0px 40px;
+    padding: 60px 0px 0px 70px;
     width:70%;
     line-height: 10mm;
     text-align: justify;
@@ -211,7 +230,9 @@ div.primary-school,div.secondary-school,div.post-secondary{
     position: relative;
     left:20px;
     color :#fff;
+    width: 10%;
     /* color:rgba(62, 62, 231, 0.925); */
+    margin-left: 20px;
     text-decoration: none;
     padding:10px 20px;
     border:2px solid #fff;
@@ -224,7 +245,7 @@ div.primary-school,div.secondary-school,div.post-secondary{
     color: #2e2ef7;
 }
 .footer-container{
-    margin-top: 30px;
+    margin-top:30px;
     background-color: rgba(47, 79, 79, 0.945);
     width:100%;
     height:8cm;
@@ -251,22 +272,42 @@ div.primary-school,div.secondary-school,div.post-secondary{
 }
 .skill-table-1,.skill-table-2{
     
-    border-collapse: collapse;
-    margin:10px;
+    margin:10px ;
 }
-.skill-table-2 table{
-    padding-left: 100px;
-    width: 100%;
+/* Setting width of table-1 and table-2 */
+.skill-table-2 table th,.skill-table-2 table td{
+    width: 9cm;
 }
 tr,td{
   height: 150px;
 }
-th,tr,td {
-    color:#fff;
-    border: 1px solid rgb(255, 255, 255);
+/* Cells' text color and border*/
+.skill-table-1 th,.skill-table-1 tr,.skill-table-1 td {
+    color:rgb(17, 13, 13);
+    border: 5px solid rgb(77, 60, 60 );
 }
+.skill-table-2 th,.skill-table-2 tr,.skill-table-2 td {
+    color:#fff;
+    border: 5px solid rgb(77, 60, 60 );
+}
+/*Border background color*/
+.skill-table-1 table{
+    width:100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 210, 46, 0.89);
+}
+.skill-table-2 table{
+    border-collapse: collapse;
+    background-color: #792cd7be;
+}
+/*Cells alignment and padding*/
 th,td{
-    background-color:#2d90a9;
+    padding:0px 10px;
+    text-align: center;
+}
+td li {
+    text-align: left;
+    padding:10px 0px;
 }
 /* Page 3:Achievements */
 /* ============================================================================================ */
@@ -276,6 +317,14 @@ th,td{
  } /*This is the parent div container for organising flexbox of the page "Achievements" */
 #achievements section div h2{
     margin-left:40px;
+}
+.awards-container div{
+    padding:15px 50px;
+}
+/* Resizing the awards-list fonts and spacing */
+.awards-container div ol li{
+    padding:15px 0px;
+    font-size: 14pt;
 }
 /* Page 4:Projects */
 /* ============================================================================================ */
@@ -305,7 +354,7 @@ th,td{
     padding:30px;
     line-height: 8mm;
 }
-projects-container > div{
+.projects-container > div{
     display:flex;
     flex-wrap: wrap;
 }
@@ -350,6 +399,23 @@ form input,form textarea {
     text-transform: uppercase;
     font-family: 'Libre Baskerville', serif;
 }
-a i img :hover{
+/* a i img :hover{
     color:#e0e4e7 ;
+} */
+#icons{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
 }
+/* a i{
+    padding: 20px;
+} */
+a i img{
+    width:100px;
+    height:auto;
+}
+.instagram{ 
+    width:80px !important; /*Reset ig icon size */
+    height:auto;
+}
+
