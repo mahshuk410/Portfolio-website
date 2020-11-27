@@ -4,7 +4,7 @@
     #about-me
 }*/
 
- 
+ @media only screen and (min_width :720px ){
 #about-me,#skills,#achievements,#projects {
     background-image:url("/Portfolio-website/image-library/background.jpg") ;
     background-position: center;
@@ -70,6 +70,37 @@ div.nav-container{
     
 }
 
+#top-button{
+    position: relative;
+    left:20px;
+    color :#fff;
+    width: 10%;
+    /* color:rgba(62, 62, 231, 0.925); */
+    margin-left: 20px;
+    text-decoration: none;
+    padding:10px 20px;
+    border:2px solid #fff;
+    background-color: #2e2ef7;
+    font-size: x-large;
+    cursor:pointer;
+}
+#top-button:hover{
+    background-color: #fff;
+    color: #2e2ef7;
+}
+
+.next-page-btn{
+    position:absolute;
+    right:2px;
+    
+    background-color: rgb(9, 119, 9);
+    color:#fff;
+    font-size: 16pt;
+    padding:10px 20px;
+    margin-right: 20px;margin-bottom: 15px;
+    border:1px solid #fff; 
+    text-decoration: none;
+}
 
 /* Page 1 : Home --> About Me */
 /* ================================================================================================ */
@@ -225,24 +256,6 @@ div.primary-school,div.secondary-school,div.post-secondary{
     line-height: 10mm;
     text-align: justify;
     font-size: 16pt !important;
-}
-#top-button{
-    position: relative;
-    left:20px;
-    color :#fff;
-    width: 10%;
-    /* color:rgba(62, 62, 231, 0.925); */
-    margin-left: 20px;
-    text-decoration: none;
-    padding:10px 20px;
-    border:2px solid #fff;
-    background-color: #2e2ef7;
-    font-size: x-large;
-    cursor:pointer;
-}
-#top-button:hover{
-    background-color: #fff;
-    color: #2e2ef7;
 }
 .footer-container{
     margin-top:30px;
@@ -407,9 +420,6 @@ form input,form textarea {
     flex-direction: row;
     align-content: center;
 }
-/* a i{
-    padding: 20px;
-} */
 a i img{
     width:100px;
     height:auto;
@@ -418,4 +428,146 @@ a i img{
     width:80px !important; /*Reset ig icon size */
     height:auto;
 }
+ }
+@media only screen and (max-width:700px){
+    #about-me section p,#skills section p,#achievements section p,#projects section p {
+        font-size: 12pt;
+    }
+    .nav-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    div.nav-container{
+        background-color: rgb(12, 117, 117);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly; 
+        
+     }
+/* Page 1 : Home --> About Me */
+/* ================================================================================================ */
 
+     .introduction-container{
+        position: relative;
+        width:100%;
+        height:950px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    #page-1 h1{
+        text-align:center;
+        
+    }
+    .selfie-pic{
+        max-width: 40%;
+        height:auto;
+    }
+     .introduction-container p{
+        position: relative;
+        top:10px;
+        width:80%;
+     }
+     .primary-school img{
+        max-width:50%;
+        height:auto;
+       
+    }
+    .secondary-school img{
+        height:auto;
+        max-width:100%;
+        
+    }
+    .post-secondary img{
+        height:auto;
+        max-width:100% ;
+        
+    }
+    /* Styling the boxes for each school description */
+    div.primary-school,div.secondary-school,div.post-secondary{
+       display:flex;
+       flex-direction: column;
+        width:70%;
+        height:300px;
+        margin-bottom: 200px;
+        padding:0px 60px  ;
+    
+    }
+    
+    /*separate line-spacing and padding for .secondary-school text */
+    
+    .primary-school p{
+        line-height: 0.85cm;
+        width:90%;
+        text-align: left;
+        
+    }
+    .secondary-school{
+        height:120%;
+        margin-bottom: 100px;
+    }
+    .secondary-school p{
+        
+        line-height: 0.85cm;
+        text-align:left;
+        margin-bottom:200px;
+    
+    }
+    #post-secondary-h1{
+        position:relative;
+    }
+    .post-secondary{
+        margin-top:200px;
+    }
+    .post-secondary p{
+        font-size: 12pt ;
+        
+        line-height: 0.85cm;
+        width:120%;
+    }
+ 
+    .work-exp p{
+        text-align: left;
+        font-size: 12pt ;
+        width:70%;
+    }
+    /*CCA*/
+    /*==========*/
+    .cca p{
+        font-size: 12pt;
+    }
+
+    .table-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .skill-table-1,.skill-table-2{
+        margin-bottom: 40px;
+    }
+    #top-button{
+        
+        margin: 5px 10px;
+        font-size:large;
+    }
+/* Page 3:Achievements */
+/* ============================================================================================ */
+.comm-service-container div p{
+    font-size: 12pt;
+    text-align: left;
+}
+/* Page 4:Projects */
+/* ============================================================================================ */
+    .projects-container p {
+        width:100%;
+        margin-left:-30px;
+    }
+    .projects-container img {
+        
+        margin-left:-20px;
+    }
+    #footer-heading{
+        text-align: left;
+        font-size: 13pt;
+    }
+}

@@ -30,8 +30,8 @@ Features
 Mouse hover: In order to make buttons appear interactive & appealing to users,I have added the color change feature when the cursor hovers those buttons.
 Navigation bar: Allows user to toggle between different pages of the website.
 Email feature : Allows interested users(employers) to contact me by entering the name and message in the form on page 4 "Connect with me" section.
-
-
+Next button:User can move to next page without having to scroll to top to click navigation bar
+Back to top button:User can scroll back up by just clicking a button
 
 Technologies Used
 ==============================================================
@@ -65,11 +65,17 @@ website background:<span>Photo by <a href="https://unsplash.com/@rosellastudio?u
 Social media
 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
+
+Primary School Image:https://www.google.com/url?sa=i&url=https%3A%2F%2Ftampinespri.moe.edu.sg%2Fabout-us%2Fschool-crest&psig=AOvVaw1yaZaVA4BKMDu5b5haGCPD&ust=1606576727385000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDhhOuCo-0CFQAAAAAdAAAAABAD
+
+Secondary School Image:https://www.google.com/imgres?imgurl=https%3A%2F%2Fbedokviewsec.moe.edu.sg%2Fqql%2Fslot%2Fu171%2FAbout%2520Us%2FBVSS%2520logo.png&imgrefurl=https%3A%2F%2Fbedokviewsec.moe.edu.sg%2Fabout-us%2Fschool-crest-and-school-song&tbnid=MpJr2ocK7uUxpM&vet=12ahUKEwiR2Mr2gqPtAhVLG7cAHQE4BrIQMygAegUIARCoAQ..i&docid=M2LdLu0a43rhLM&w=2480&h=2442&q=bedok%20view%20secondary%20school%20logo&ved=2ahUKEwiR2Mr2gqPtAhVLG7cAHQE4BrIQMygAegUIARCoAQ
+
+NP ICT Image:https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2FNPICTSociety%2Fvideos%2F10152116048332925%2F&psig=AOvVaw2gAcyr81ILtw2Tf3kOSRhY&ust=1606576773158000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCYhIGDo-0CFQAAAAAdAAAAABAD
+
+-Acknowledgement
+
+--->Inspiration to create logo 
 Traced Icon for personal Logo: <a href ="https://findicons.com/">
 
 Masked Binary Code for Personal Logo : "https://www.flickr.com/photos/49333396@N06" 
 Image Creator: Craig Taylor
-
-
-
--Acknowledgement
