@@ -4,7 +4,7 @@
     #about-me
 }*/
 
- @media only screen and (min_width :720px ){
+
 #about-me,#skills,#achievements,#projects {
     background-image:url("/Portfolio-website/image-library/background.jpg") ;
     background-position: center;
@@ -428,7 +428,7 @@ a i img{
     width:80px !important; /*Reset ig icon size */
     height:auto;
 }
- }
+ 
 @media only screen and (max-width:700px){
     #about-me section p,#skills section p,#achievements section p,#projects section p {
         font-size: 12pt;
